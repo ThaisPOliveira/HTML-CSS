@@ -1,0 +1,108 @@
+
+body {
+	background-image: url(fundo.jpg); }
+
+	a,p, h1, h5, tr, h3, td, li {color: rgb(255, 255, 255);
+	text-align: justify;
+	font-family: 'Franklin Gothic Medium';}
+
+	h4 { color: white;
+		text-align: center;
+		font-family: 'Trebuchet MS';}
+	
+	a { font-size: 25px;
+		margin: 0px 10px;}
+
+	table {
+		align: center;
+		height: 50%;}
+
+	hr {
+		height: 2px;
+		border-top: 2px solid rgb(255, 252, 252);}
+
+	.container { max-width: 1920px;
+		        width:100%;}
+				
+	#oa {
+		width: 650px;
+		height: auto;
+		margin: auto;
+		opacity: 2;
+		padding: 20px 30px;}
+
+  /*header*/
+  header {
+	 top: 0;
+	 height: auto;
+	 width:100% ;}
+
+	/*navbar*/
+	nav {
+		position: absolute;
+		top: 0;
+		height: 45px;
+		width: 100%;
+		z-index:1;
+		background-color: rgba(0, 0, 0, 0.596);
+		border-bottom: 1px solid #CCC;}
+	
+
+	nav: after{ 
+		clear: both;
+		content:" ";
+		display:block; }
+
+	.nav-container {
+		max-width: 1000px;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;}
+
+     button {
+		background-color : gray; 
+		position : relative;
+		padding : 1px 10px;
+	    border-radius: 10px;}
+		
+	
+    .flex{
+		display: flex;
+		justify-content: flex-end;}
+
+	.img{ 
+		padding: 10px;
+		width: 300px;
+		height: 300px;}
+
+	 .nav-container ul {
+    float: right;
+    height: 15px;
+    line-height: 10px;
+    margin: 0%;
+    list-style: none;}
+
+  .nav-container li {
+  list-style: none;
+  float: right; 
+  margin: 0 15px; }
+
+  .nav-container li a {
+    text-decoration: none;
+    color:#ffffff;
+    transition:0.4s; }
+
+  .nav-container li a:hover {
+    color: #5c5a5a ; }
+
+  #link-topo {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	background-color: rgb(199, 199, 199);
+	padding: 20px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+    height: 15px;
+    width: 15px;
+    text-align: center;}
