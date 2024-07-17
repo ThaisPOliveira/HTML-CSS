@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icone-preto.png">
+    <title> Quem Somos? </title>
+    <link  rel="stylesheet" type="text/css" href="projeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="link-topo" href="#">&uarr;</a>
+    <div class="conteiner">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="pt_historia.html">Espanha</a>
+                <a href="pt_sistemagoverno.html">Sistema de Governo</a>
+                <a href="pt_hino.html">Hino</a>
+                <a href="pt_lugares.html">Lugares Túristicos</a>
+                <a href="pt_comidas.html">Comidas Tipicas</a>
+                <a href="pt_dancas.html">Danças Típicas</a>
+                <a href="pt_futebol.html">Futebol</a>
+                <a href="pt_jogadores.html">Jogadores</a>
+                <a href="fpt_curiosadades.html">Curiosidades</a>
+                <a href="pt_quem_somos.html">Quem somos</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+            function openNav() {
+            document.getElementById("myNav").style.display = "block";
+            }
+            function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+            }
+        </script>
+        <div class="logo">
+        <h1> ESPANHA </h1>
+        </div>
+        <select name="links" id="idioma" onchange="location.href=this.value">
+            <option value="pt_quem_somos.html"> PT-BR </option>
+            <option value="en_quem_somos.html"> EN-US </option>
+        </select>
+    </div>
+    <div class="outroconteiner" id="zero">
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </div>
+    <br><br>
+    <a href="index.html" id="volte"> &larr; Volte para a página inicial </a>
+    <br><br><br><br>
+    <header id="center">
+        <h4 class="titulo" id="yellow"> Integrantes </h4><br><br><br><br>
+        <div id="icones">
+            <div>
+                <img src="imagens/icone-kaue.png" alt="kaue"><br>
+                <p><b> Kauê Borges </b></p><br>
+            </div>
+            <div>
+                <img src="imagens/icone-paula.png" alt="paula"><br>
+                <p><b> Paula Duarte </b></p><br>
+            </div>
+            <div>
+                <img src="imagens/icone-stefany.png" alt="stefany"><br>
+                <p><b> Stefany Alexandre </b></p><br>
+            </div>
+            <div>
+                <img src="imagens/icone-taina.png" alt="taina"><br>
+                <p><b> Tainá Kasai </b></p><br>
+            </div>
+            <div>
+                <img src="imagens/icone-thais.png" alt="thais"><br>
+                <p><b> Thais Oliveira </b></p><br>
+            </div>
+        </div><br><br><br>
+        <h4 class="titulo" id="yellow"> Agradecimentos </h4><br><br>
+        <p> Gostaríamos de agradecer aos professores(as): Renata, Fellipe, Paulo e Célia que durante as aulas prestaram auxilio em quaisquer duvida ou dificuldade.Vocês são os melhores professores e somos gratos por aprender com vocês <3</p><br><br><br><br><br>
+    </header>
+    <footer id="final">
+        <div>
+            <h3 class="titulo"> ESPANHA </h3><br><br>
+        </div>
+        <div>
+            <h4 class="subtitulo"> Fontes </h4><br>
+            <a href="https://www.youtube.com/watch?v=pO73IamOa0c&t=57s" target="_blank"> Icone Sanduiche </a><br>
+            <a href="https://developers.google.com/chart" target="_blank"> google chart</a>
+        </div>
+    </footer>
+</body>
+</html>

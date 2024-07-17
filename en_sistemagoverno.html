@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['religion', 'percent'],
+          ['Catholicism', 58],
+          ['no religion', 37],
+          ['other religion', 3],
+          ['no answer', 2]
+        ]);
+        var options = {
+          title: 'Religions in Spain',
+          is3D: true,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['YEAR', 'Catholicism'],
+          ['2005',77.3],
+          ['2006',76.7],
+          ['2007',77.4],
+          ['2008',77.4],
+          ['2009',76.4],
+          ['2010',74.3],
+          ['2011',72.0],
+          ['2012',73.1],
+          ['2013',71.5],
+          ['2014',71.0],
+          ['2015',70.9],
+          ['2016',70.0],
+          ['2017',66.7],
+          ['2018',66.5],
+          ['2019',66.9],
+          ['2020',67.2]
+        ]);
+        var options = {
+          chart: {
+            title: 'Percentage evolution of Catholicism in the Country',
+            subtitle: 'percentage from 2005 to 2020',
+          }
+        };
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icone-preto.png">
+    <title> Government system </title>
+    <link  rel="stylesheet" type="text/css" href="projeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="link-topo" href="#">&uarr;</a>
+    <div class="conteiner">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="en_home.html">Home</a>
+            <a href="en_historia.html">Spain</a>
+            <a href="en_sistemagoverno.html">Government System</a>
+            <a href="en_hino.html">Anthem</a>
+            <a href="en_lugares.html">Touristic Places</a>
+            <a href="en_comidas.html">Typical Foods</a>
+            <a href="en_dancas.html">Typical Dances</a>
+            <a href="en_futebol.html">Football</a>
+            <a href="en_jogadores.html">Playes</a>
+            <a href="en_curiosidades.html">Trivia</a>
+            <a href="en_quem_somos.html">Who we are</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <script>
+          function openNav() {
+          document.getElementById("myNav").style.display = "block";
+          }
+          function closeNav() {
+          document.getElementById("myNav").style.display = "none";
+          }
+      </script>
+        <div class="logo">
+        <h1> SPAIN </h1>
+        </div>
+        <select name="links" id="idioma" onchange="location.href=this.value">
+            <option value="en_sistemagoverno.html"> EN-US </option>
+            <option value="pt_sistemagoverno.html"> PT-BR </option>
+        </select>
+    </div>
+    <div class="outroconteiner" id="dois"></div>
+    <br><br>
+    <a href="en_home.html" id="volte"> &larr; Return to the home page </a>
+    <div id="align">
+        <h3 class="titulo" id="yellow"> GOVERMENT SYSTEM </h3><br><br>
+        <p>Spain is currently in a parliamentary monarchy, governed by the Constitution of 1978. The king's role is to choose the president of government and appoint the other members of the government proposed by the president. The figure of the king is inviolable.<br><br> The monarchy is of great influence in the country. It was responsible for maintaining the union between the Spanish regions, with a stable homogenization. It brought great advances and modernizations, despite being considered by many to be just an “embellishment”, which maintains a governmental formality.</p><br><br><br>
+        <h2>MAP OF SPAIN</h2><br><br>
+        <img src="imagens/sg_mapa.jpg" alt="mapa da espanha"><br><br><br><br><br>
+
+        <h2>SPANISH FLAG</h2><br><br>
+        <p> The flag of Spain originated in the 18th century, being established by Queen Isabel II, and the flag is formed by two red and one yellow stripes, which contains the shield in the yellow stripe. </p><br><br>
+        <img src="imagens/sg_bandeira.png" alt="bandeira da Espanha"><br><br><br>
+        <p>In the 18th century the Spanish flag was initially white and not suitable for use on the high seas. With that, they joined the red and yellow colors that came to be used by Spanish vessels.<br>Over time, the flag underwent changes, due to the republican and dictatorial periods that the country went through.<br>The current Spanish flag was made official shortly after redemocratization and when the parliamentary monarchy was adopted.</p><br><br>
+        <h3>MEANING OF THE FLAG COLORS</h3><br><br>
+        <p>The meaning of the red and yellow colors on the flag is that red symbolizes the courage and sacrifice of the local population, and yellow refers to the country's nobility and riches.</p><br><br>
+        <h3>MEANING OF FLAG SHIELD</h3><br><br><br>
+        <img src="imagens/sg_escudo.jpg" alt="imagem do escudo da bandeira"><br><br><br>
+        <P>The coat of arms is made up of the kingdoms that came together to create the country. It consists of six shields:</P><br><br>
+        <UL>
+            <li>The Kingdom of Castile, which is represented by a castle.</li><br>
+            <li>The Kingdom of Lion, which is a stylized Lion.</li><br>
+            <li>The Kingdom of Aragon is a shield of yellow and red vertical stripes.</li><br>
+            <li>The Kingdom of Navarre, symbolized by a shield on a red background with chains.</li><br>
+            <li>The Kingdom of Granada is represented by a pomegranate below the shield.</li><br>
+            <li>In the center, the coat of arms of the Bourbons royal family, consisting of three fleurs-de-lis.</li><br>
+            <li>Above is the crown that symbolizes the monarchy.</li><br>
+            <li>Next to it are the columns of Hercules symbolizing the edge of the world.</li><br>
+        </UL><br><br>
+
+        <h2>RELIGION</h2><br><br>
+        <P>For years Spain was predominantly Roman Catholic, which gives it the title of “Catholic country”, popularly speaking, to this day. Despite this, currently the numbers have undergone a great change. In an article made by g1, it was found that of the 67% Catholics, only 22% actually practice religion: “According to CIS data, 13.3% of Spaniards say they are atheists, 8.5% are agnostics and those who are indifferent or without religion represent 8.3% of the population. In total, this number reaches 29.1% and is, for the first time, greater than the number of practicing Catholics.”</P><br>
+        <div id="piechart_3d"></div>
+        <p>Below is the chart with information on the Catholic percentage evolution in the country </p><br><br><br><br>
+        <div id="columnchart_material"></div><br><br><br><br>
+    </div>
+    
+    <footer id="final">
+        <div>
+            <h3 class="titulo"> SPAIN </h3><br><br>
+        </div>
+        <div>
+            <h4 class="subtitulo"> Sources </h4><br>
+            <a href="https://mundoeducacao.uol.com.br/geografia/espanha.htm#:~:text=Originou%2Dse%20da%20unifica%C3%A7%C3%A3o%20de,pa%C3%ADs%20%C3%A9%20uma%20monarquia%20parlamentarista." target="_blank"> Mundo Educação – UOL </a><br>
+            <a href="https://www.brasileiraspelomundo.com/o-sistema-politico-na-espanha-050972860" target="_blank">Brasil Pelo Mundo</a><br>
+            <a href="https://g1.globo.com/mundo/noticia/2019/08/02/pela-primeira-vez-espanha-tem-mais-ateus-e-agnosticos-do-que-catolicos-praticantes.ghtml" target="_blank">G1 globo</a><br>
+            <a href="https://mundoeducacao.uol.com.br/geografia/bandeira-da-espanha.htm#:~:text=bandeira%20da%20Espanha-,A%20bandeira%20da%20Espanha%20é%20formada%20por%20duas%20faixas%20vermelhas,também%20remete%20à%20nobreza%20espanhola" target="_blank">Mundo Educacao - UOL</a><br>
+            <a href="https://www.todamateria.com.br/bandeira-da-espanha" target="_blank">Toda Materia</a>
+        </div>
+    </footer>
+</body>
+</html>

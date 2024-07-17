@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icone-preto.png">
+    <title> Hymn </title>
+    <link  rel="stylesheet" type="text/css" href="projeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="link-topo" href="#">↑</a>
+    <div class="conteiner">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                  <a href="en_home.html">Home</a>
+                  <a href="en_historia.html">Spain</a>
+                  <a href="en_sistemagoverno.html">Government System</a>
+                  <a href="en_hino.html">Anthem</a>
+                  <a href="en_lugares.html">Touristic Places</a>
+                  <a href="en_comidas.html">Typical Foods</a>
+                  <a href="en_dancas.html">Typical Dances</a>
+                  <a href="en_futebol.html">Football</a>
+                  <a href="en_jogadores.html">Playes</a>
+                  <a href="en_curiosidades.html">Trivia</a>
+                  <a href="en_quem_somos.html">Who we are</a>
+            </div>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <script>
+              function openNav() {
+              document.getElementById("myNav").style.display = "block";
+              }
+              function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+              }
+          </script>
+        <div class="logo">
+        <h1> SPAIN </h1>
+        </div>
+        <select name="links" id="idioma" onchange="location.href=this.value">
+            <option value="en_hino.html"> EN-US </option>
+            <option value="pt_hino.html"> PT-BR </option>
+        </select>
+    </div>
+    <div class="outroconteiner" id="tres">
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </div>
+
+    <br><br><br>
+    <a href="en_home.html" id="volte"> &larr; Return to the home page </a>
+    <br><br><br>
+    <header id="center">
+        <h5 class="titulo" id="yellow"> SPAIN HYMN </h5><br><BR>
+        <p> The anthem of Spain, called Marcha Real, is one of the oldest hymns in Europe and first appeared in 1761.<br> It does not have a lyric, but there have been several attempts to insert it. <br> The last attempt was created in 1928, called “Viva España“, but at the end of Francisco Franco's dictatorship, this version was abandoned by the Spanish population. </p><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C6Op3LmG9ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br>
+    </header>
+
+
+    <footer id="final">
+        <div>
+            <h3 class="titulo"> SPAIN</h3><br><br>
+        </div>
+        <div>
+            <h4 class="subtitulo"> Sources </h4><br>
+            <a href="https://www.eurodicas.com.br/hino-da-espanha/" target="_blank"> Euro Dicas </a>
+        </div>
+    </footer>
+</body>
+</html>

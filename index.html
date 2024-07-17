@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icone-preto.png">
+    <title> Home </title>
+    <link  rel="stylesheet" type="text/css" href="projeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="link-topo" href="#">↑</a>
+    <div class="conteiner">
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="pt_historia.html">Espanha</a>
+                <a href="pt_sistemagoverno.html">Sistema de Governo</a>
+                <a href="pt_hino.html">Hino</a>
+                <a href="pt_lugares.html">Lugares Túristicos</a>
+                <a href="pt_comidas.html">Comidas Tipicas</a>
+                <a href="pt_dancas.html">Danças Típicas</a>
+                <a href="pt_futebol.html">Futebol</a>
+                <a href="pt_jogadores.html">Jogadores</a>
+                <a href="pt_curiosadades.html">Curiosidades</a>
+                <a href="pt_quem_somos.html">Quem somos</a>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+            function openNav() {
+            document.getElementById("myNav").style.display = "block";
+            }
+            function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+            }
+        </script>
+
+        <div class="logo">
+        <h1> ESPANHA </h1>
+        </div>
+        <select name="links" id="idioma" onchange="location.href=this.value">
+            <option value="index.html"> PT-BR </option>
+            <option value="en_home.html"> EN-US </option>
+        </select>
+
+    </div>
+    <div class="outroconteiner" id="zero">
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </div>
+    <br><br><br><br><br>
+    <header id="center">
+        <h4 class="titulo" id="yellow">A História e o contexto histórico</h4>
+        <p class="subtitulo"> do segundo maior país da União Europeia </p><br><br><br><br>
+        <p> O território espanhol foi habitado desde a antiguidade por diferentes populações, como mouros, árabes e romanos, que se espalharam por vários reinos. A unificação da Espanha só poderia ser alcançada por meio de acordos políticos e econômicos que permeavam a monarquia na região. A Igreja também desempenhou um papel poderoso, pois o país foi unificado após a adoção do catolicismo como religião oficial.<br><br>Após a unificação, a Espanha tornou-se uma das maiores potências do mundo, especialmente devido ao seu protagonista durante as Grandes Navegações. </p><br><br><br><br><br>
+    </header>
+
+    <div id="divisao">
+        <img src="imagens/fundo-politicaESP.jpg" class="img" alt="Câmara dos deputados na espanha" >
+        <h4 class="titulo" id="yellow">Sistema de Governo</h4><br><br>
+        <p>A Espanha se encontra atualmente em uma monarquia parlamentarista, regida pela Constituição de 1978. O rei tem como função escolher o presidente de governo e nomear os outros membros do governo propostos pelo presidente. A figura do rei é inviolável<br>A monarquia é de grande influência no país, sendo responsável por manter a união entre as regiões espanholas, com uma homogeneização estável.</p><br><br><br>
+        <a href="pt_sistemagoverno.html" class="button">Conheça mais Espanha</a>
+    </div>
+
+    <header id="center">
+        <br><br><br>
+        <h4 class="titulo" id="yellow"> Copa do mundo - 2010</h4><br><br><br><br><br>
+        <div id="icones">
+            <div>
+                <img src="imagens/icone-africa.png" alt="icone da Africa"><br><br>
+                <p><b> Africa do Sul </b></p><br><br>
+                <p> A copa ocorreu na África do Sul. 1° vez que um país africano sedia um evento esportivo que tem repercussão mundial.</p><br><br>
+            </div>
+            <div>
+                <img src="imagens/icone-mascote.png" alt="icone pata de animal"><br><br>
+                <p><b> Mascote </b></p><br><br>
+                <p> O mascote da copa de 2010 foi o leopardo Zakumi. </p><br><br>
+            </div>
+            <div>
+                <img src="imagens/icone-trofeu.png" alt="icone trofeu"><br><br>
+                <p><b>Vencedor </b></p><br><br>
+                <p> A seleção da Espanha venceu a Copa ao derrotar a Holanda em Joanesburgo. </p><br><br>
+            </div>
+        </div>
+        <br>
+        <a href="pt_futebol.html" class="button">Veja mais</a>
+        <br><br><br><br><br><br><br><br>
+        <h4 class="titulo" id="yellow">Time Espanha</h4>
+        <br><br><br>
+        <div class="ctn">
+            <div class="card">
+                <img src="jogadores/Iker Casillas_.png" alt="Iker Casillas">
+                <div class="container">
+                <p id="pitico">20 de maio de 1981</p><br>
+                <h2>Iker Casillas</h2><br>
+                <p>Goleiro, Real Madrid </p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="jogadores/Pedro Rodriguez_.png" alt="Pedro Rodríguez">
+                <div class="container">
+                    <p id="pitico">28 de julho de 1987</p><br><br>
+                    <h2>Pedro Rodríguez</h2> 
+                    <p>Atacante, Barcelona.</p> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="jogadores/Gerard Pique.png" alt="Avatar">
+                <div class="container">
+                  <p id="pitico">2 de fevereiro de 1987</p><br><br>
+                  <h2><b>Gerard Piqué </b></h2> 
+                  <p>Defensor, clube Barcelona.</p> 
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <a href="pt_jogadores.html" class="button">conheca o time completo</a>
+        <br><br><br><br><br><br>
+    </header>
+    
+    <footer id="final">
+        <div>
+            <h3 class="titulo"> ESPANHA </h3><br><br>
+        </div>
+        <div>
+            <h4 class="subtitulo"> Fontes </h4><br>
+            <a href="https://www.brasileiraspelomundo.com/o-sistema-politico-na-espanha-050972860" target="_blank"> Brasileiras pelo mundo </a><br>
+            <a href="https://mundoeducacao.uol.com.br/geografia/espanha.htm#:~:text=Originou%2Dse%20da%20unifica%C3%A7%C3%A3o%20de,pa%C3%ADs%20%C3%A9%20uma%20monarquia%20parlamentarista." target="_blank"> Mundo Educação </a><br>
+            <a href="https://esportenewsmundo.com.br/titulo-mundial-da-espanha-completa-10-anos-relembre-a-campanha-e-10-curiosidades/amp#amp_tf=De%20%251%24s&aoh=16606504758070&referrer=https%3A%2F%2Fwww.google.com"> ENM Esporte New Mundo</a><br>
+            <a href="https://www.guiadoscuriosos.com.br/esportes/futebol/copa-do-mundo/10-curiosidades-sobre-a-copa-de-2010-africa-do-sul/amp/"> Guia dos Curiosos </a><br>
+        </div>
+    </footer>
+</body>
+</html>

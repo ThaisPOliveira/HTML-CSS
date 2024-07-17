@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['religião', 'porcento'],
+          ['catolicismo',58],
+          ['sem religião', 37],
+          ['outra religião',  3],
+          ['sem resposta', 2]
+        ]);
+        var options = {
+          title: 'Religiões na Espanha',
+          is3D: true,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Ano', 'Catolicismo'],
+          ['2005',77.3],
+          ['2006',76.7],
+          ['2007',77.4],
+          ['2008',77.4],
+          ['2009',76.4],
+          ['2010',74.3],
+          ['2011',72.0],
+          ['2012',73.1],
+          ['2013',71.5],
+          ['2014',71.0],
+          ['2015',70.9],
+          ['2016',70.0],
+          ['2017',66.7],
+          ['2018',66.5],
+          ['2019',66.9],
+          ['2020',67.2]
+        ]);
+        var options = {
+          chart: {
+            title: 'Evolução percentual do católicismo no Pais',
+            subtitle: 'percentual de 2005 a 2020',
+          }
+        };
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="imagens/icone-preto.png">
+    <title> Sistema de Governo </title>
+    <link  rel="stylesheet" type="text/css" href="projeto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="link-topo" href="#">&uarr;</a>
+    
+    <div class="conteiner">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="pt_historia.html">Espanha</a>
+          <a href="pt_sistemagoverno.html">Sistema de Governo</a>
+          <a href="pt_hino.html">Hino</a>
+          <a href="pt_lugares.html">Lugares Túristicos</a>
+          <a href="pt_comidas.html">Comidas Tipicas</a>
+          <a href="pt_dancas.html">Danças Típicas</a>
+          <a href="pt_futebol.html">Futebol</a>
+          <a href="pt_jogadores.html">Jogadores</a>
+          <a href="fpt_curiosadades.html">Curiosidades</a>
+          <a href="pt_quem_somos.html">Quem somos</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+        document.getElementById("myNav").style.display = "block";
+        }
+        function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+        <div class="logo">
+        <h1> ESPANHA </h1>
+        </div>
+        <select name="links" id="idioma" onchange="location.href=this.value">
+            <option value="pt_sistemagoverno.html"> PT-BR </option>
+            <option value="en_sistemagoverno.html"> EN-US </option>
+        </select>
+    </div>
+    <div class="outroconteiner" id="dois"></div>
+    <br><br>
+    <a href="index.html" id="volte"> &larr; Volte para a página inicial </a>
+    <div id="align">
+        <h3 class="titulo" id="yellow">SISTEMA DE GOVERNO </h3><br><br>
+        <p>A Espanha se encontra atualmente em uma monarquia parlamentarista, regida pela Constituição de 1978. O rei tem como função escolher o presidente de governo e nomear os outros membros do governo propostos pelo presidente. A figura do rei é inviolável.<br><br>A monarquia é de grande influência no país. Foi a responsável por manter a união entre as regiões espanholas, com uma homogeneização estável. Trouxe grandes avanços e modernizações, apesar de atualmente ser considerada por muitos apenas um “enfeite”, que mantém uma formalidade governamental.</p><br><br><br>
+        <h2>MAPA DA ESPANHA</h2><br><br>
+        <img src="imagens/sg_mapa.jpg" alt="mapa da espanha"><br><br><br><br><br>
+
+        <h2>BANDEIRA DA ESPANHA</h2><br><br>
+        <p>A bandeira da Espanha teve origem no século XVIII, sendo estabelecida pela rainha Isabel II, e a bandeira é formada por duas faixas vermelhas e uma amarela, que contém o escudo na faixa amarela.</p><br><br>
+        <img src="imagens/sg_bandeira.png" alt="bandeira da Espanha"><br><br><br>
+        <p>No século XVIII a bandeira Espanhola foi inicialmente branca e não era indicada para o uso em alto-mar. Com isso, aderiram as cores vermelha e amarela que passaram a ser usadas pelas embarcações espanholas.<br>Com o tempo a bandeira foi sofrendo alterações, por conta dos períodos republicanos e ditatoriais que o país passou. <br> A bandeira atual espanhola foi oficializada logo após a redemocratização e quando foi adotado a monarquia parlamentarista.</p><br><br>
+        <h3>SIGNIFICADO DAS CORES DA BANDEIRA</h3><br><br>
+        <p>O significado das cores vermelha e amarela presentes na bandeira é que o vermelho simboliza a coragem e o sacrifício da população local, e a amarela remete à nobreza e às riquezas do país.</p><br><br>
+        <h3>SIGNIFICADO DO ESCUDO DA BANDEIRA</h3><br><br><br>
+        <img src="imagens/sg_escudo.jpg" alt="imagem do escudo da bandeira"><br><br><br>
+        <P>O escudo de armas é constituído pelos reinos que se uniram para a criação do país. Ele é composto por seis escudos:</P><br><br>
+        <UL>
+            <li>O Reino de Castela, que é representado por um castelo.</li><br>
+            <li>O Reino de Leão, que é um Leão estilizado.</li><br>
+            <li>O Reino de Aragão, é um escudo de listras verticais amarela e vermelha.</li><br>
+            <li>O Reino de Navarra, simbolizado por um escudo de fundo vermelho com correntes.</li><br>
+            <li>O Reino de Granada, é representado por uma romã abaixo do escudo.</li><br>
+            <li>No centro o escudo da família real Bourbons, que consiste em três flores-de-lis.</li><br>
+            <li>Acima, está a coroa que simboliza a monarquia.</li><br>
+            <li>Ao lado, estão as colunas de Hércules que simboliza o limite do mundo.</li><br>
+        </UL><br><br>
+
+        <h2>RELIGIÃO</h2><br><br>
+        <P>Durante anos a Espanha foi predominantemente Católica Apostólica Romana, o que lhe concede até hoje o título de “país católico”, popularmente falando. Apesar disso, atualmente os números tem sofrido uma grande mudança. Em uma matéria feita pelo g1, foi constatado que dos 67% católicos, apenas 22% realmente praticam a religião: “Segundo dados do CIS, 13,3% dos espanhóis se dizem ateus, 8,5% são agnósticos e os indiferentes ou sem religião representam 8,3% da população. No total, esse número chega a 29,1% e é, pela primeira vez, maior do que a quantidade de católicos praticantes”.</P><br>
+        <div id="piechart_3d"></div>
+        <p>Segue o gráfico com as informações da evolução percentual católica no país: </p><br><br><br><br>
+        <div id="columnchart_material"></div><br><br><br><br>
+    </div>
+    
+    <footer id="final">
+        <div>
+            <h3 class="titulo"> ESPANHA </h3><br><br>
+        </div>
+        <div>
+            <h4 class="subtitulo"> Fontes </h4><br>
+            <a href="https://mundoeducacao.uol.com.br/geografia/espanha.htm#:~:text=Originou%2Dse%20da%20unifica%C3%A7%C3%A3o%20de,pa%C3%ADs%20%C3%A9%20uma%20monarquia%20parlamentarista." target="_blank"> Mundo Educação – UOL </a><br>
+            <a href="https://www.brasileiraspelomundo.com/o-sistema-politico-na-espanha-050972860" target="_blank">Brasil Pelo Mundo</a><br>
+            <a href="https://g1.globo.com/mundo/noticia/2019/08/02/pela-primeira-vez-espanha-tem-mais-ateus-e-agnosticos-do-que-catolicos-praticantes.ghtml" target="_blank">G1 globo</a><br>
+            <a href="https://mundoeducacao.uol.com.br/geografia/bandeira-da-espanha.htm#:~:text=bandeira%20da%20Espanha-,A%20bandeira%20da%20Espanha%20é%20formada%20por%20duas%20faixas%20vermelhas,também%20remete%20à%20nobreza%20espanhola" target="_blank">Mundo Educacao - UOL</a><br>
+            <a href="https://www.todamateria.com.br/bandeira-da-espanha" target="_blank">Toda Materia</a>
+        </div>
+    </footer>
+</body>
+</html>

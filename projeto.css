@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    background-color: rgb(252, 252, 252);
+    color:rgb(0, 0, 0);
+}
+a {
+    text-decoration: none;
+}
+/**/
+h1,h2,h3,h4,h5,p,a,li,table{
+    font-family: 'Lato', sans-serif;
+}
+p,ul,table{
+    font-size: 18px;
+}
+#pitico {
+    font-size: 14px;
+}
+.titulo {
+    font-size: 40px;
+}
+#yellow {
+    color: #bb8f08;
+}
+.subtitulo {
+    font-size: 20px;
+}
+#center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 130px;
+}
+.centro {
+    margin-left: 85px;
+}
+#volte {
+    color:black;
+    padding: 0px 70px;
+}
+#volte:hover {
+    color: #daa60c;
+    transition: 0.2s;
+}
+
+/*divisão*/
+#divisao {
+    background-color: #eceaea;
+    display:flow-root;
+    height: 100%;
+    padding: 80px 60px;
+    text-align: center;
+}
+#divisão p {
+    height: 450px;
+}
+.img{
+    float: left;
+    padding: 0px 30px;
+    width: 700px;
+    margin-right: 20px;
+}
+.button{
+    background-color: #610a0a;
+    color:rgb(255, 255, 255);
+    padding: 17px;
+    border-radius: 25px;
+}
+/*copa*/
+#icones{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+}
+#icones p {
+    margin: 0px 10px 0px 10px;
+}
+#icones img {
+    width: 100px;
+    height: 100px;
+}
+/*final*/
+#final {
+    background-color:#610a0a;
+    color:#ffffff;
+    height: 100%;
+    padding: 40px;
+    display: grid;
+}
+#final a {
+    color: white;
+}
+/**/
+#align {
+    margin: 100px 200px;
+}
+#align #yellow{
+    text-align: center;
+}
+#align img{
+    align-self: center;
+    width: 90%;
+    height: auto;
+    padding-left: 120px;
+} 
+#align a{
+    color:#bb8f08;
+}
+#align ul{
+    margin-left: 30PX;
+}
+#align table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#align td {
+    padding: 10px 150px;
+}
+#infort {
+    font-size: 15px;
+    margin-left: 125px;
+}
+/*botão volta topo*/
+#link-topo {
+	color: rgb(255, 255, 255);
+	background-color:#000000;
+	padding: 25px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+}
+/*Menu*/
+.conteiner {
+    display: flex;
+    max-width: 100%;
+    padding: 20px 30px;
+    margin: auto;
+    background-color: white;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+#idioma {
+    padding-left: 20px;
+    width: 150px;
+    border-radius: 30px;
+}
+/*banner*/
+.outroconteiner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+#zero {
+    background: url('imagens/fundo-bandeira.jpg') no-repeat center center/cover;
+}
+#um {
+    background: url('imagens/fundo-espanha.jpg') no-repeat center center/cover;
+}
+#dois {
+    background: url('imagens/fundo-espanha2.jpg') no-repeat center center/cover;
+}
+#tres {
+    background: url('imagens/img-hino.jpg') no-repeat center center/cover;
+}
+#quatro {
+    background: url('imagens/fundo-oliveira.jpg') no-repeat center center/cover;
+}
+#cinco {
+    background: url('imagens/fundo_danca.jpg') no-repeat center center/cover;
+}
+#seis {
+    background: url('imagens/fundo-estadio.jpg') no-repeat center center/cover;
+}
+#sete {
+    background: url('imagens/fundo-kermit.jpg') no-repeat center center/cover;
+}
+/*carta*/
+.carta {
+    position: flex;
+    height: 350px;
+    width: 250px;
+    margin: 10px;
+}
+#cntcarta {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background: none;
+}
+#frente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: #250808;
+    color: #000;
+}
+#columnchart_material{
+    width: 100%;
+    height: 300px; 
+}
+#piechart_3d{
+    width: 100%; 
+    height: 500px;
+}
+/**/
+.ctn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 30px;
+    height: 500px;
+    border-radius: 5px;
+}
+.card img{
+    width: 300px;
+    height: 400px;
+}
+.card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0,0,0,0.2);
+}
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+}
+/**/
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(15, 15, 15, 0.9);
+}
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.overlay a {
+    padding: 4px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b9b8b8;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
